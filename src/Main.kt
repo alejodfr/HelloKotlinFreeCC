@@ -1,13 +1,15 @@
 
-//Just explaining how type inference and null variables works in kotlin
+//Some if and else statements examples
 val name = "Nate"
 var greeting: String? = null
 
 fun main(){
-    println(greeting)
-    println(name)
+    if (greeting != null){
+        println(greeting)
+    } else {
+        println("hi")
+    }
 
-    greeting = null
-    greeting = "hi"
+    println(name)
     println(greeting)
 }
