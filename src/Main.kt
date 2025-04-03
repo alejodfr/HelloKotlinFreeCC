@@ -2,10 +2,7 @@
 // explicacion de funciones basicas
 // llamado de funciones
 
-fun sayHello(itemToGreet:String) {
-    val msg = "Hello $itemToGreet"
-    println(msg)
-}
+fun sayHello(itemToGreet:String) = println("Hello $itemToGreet")
 
 
 fun main(){
