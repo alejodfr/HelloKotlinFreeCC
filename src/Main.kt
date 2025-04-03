@@ -7,9 +7,9 @@ fun sayHello(greeting: String, vararg itemToGreet:String) {
     }
 }
 
+fun greetPerson(greeting: String, name: String) = println("$greeting $name")
 
 fun main(){
-    val interestingThings = arrayOf("Kotlin", "Programming", "Comic Books")
-    sayHello("hi", *interestingThings)
+    greetPerson(name = "alejo", greeting = "hi")
 }
 
