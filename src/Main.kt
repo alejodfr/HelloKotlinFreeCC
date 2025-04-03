@@ -1,15 +1,15 @@
 
 // explicacion de funciones basicas
+// llamado de funciones
 
-fun getGreeting() = "Hello Kotlin"
-
-fun sayHello() {
-    println(getGreeting())
+fun sayHello(itemToGreet:String) {
+    val msg = "Hello $itemToGreet"
+    println(msg)
 }
 
+
 fun main(){
-    println("hello world")
-    println(getGreeting())
-    sayHello()
+    sayHello(itemToGreet = "Kotlin")
+    sayHello(itemToGreet = "World")
 }
 
