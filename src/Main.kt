@@ -10,8 +10,8 @@ fun main(){
     println(interestingThings[0]) //imprime el primer elemento del array porque los arreglos comienzas desde el zero
     println(interestingThings.get(0)) //hace lo mismo que la linea superior
 
-   interestingThings.forEach { interestingThings ->
-        println(interestingThings) //otrs forma de hacerlo
+   interestingThings.forEachIndexed { index, interestThings ->
+       println("$interestThings is at index $index") //froma mas descriptiva
    }
 }
 
