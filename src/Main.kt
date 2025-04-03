@@ -11,5 +11,8 @@ fun greetPerson(greeting: String = "hello", name: String = "kotlin") = println("
 
 fun main(){
     val person = Person("Alejandro", "Fuenmayor")
+    person.lastName
+    person.firstName
+
 }
 
