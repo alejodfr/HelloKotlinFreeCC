@@ -1,7 +1,7 @@
 
 // explicacion de funciones basicas
 
-fun getGreeting(): String = "Hello Kotlin"
+fun getGreeting() = "Hello Kotlin"
 
 fun sayHello() {
     println(getGreeting())
