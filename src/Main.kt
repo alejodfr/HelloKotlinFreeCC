@@ -1,14 +1,15 @@
 
-//los mismos cambios pero diferentes committ del if and else
+//un ejempko del use del when
 val name = "Nate"
 var greeting: String? = null
 
 fun main(){
-    if (greeting != null){
-        println(greeting)
-    } else {
-        println("hi")
+    greeting = "hello"
+    when (greeting) {
+        null -> println("hi")
+        else -> println(greeting)
     }
+
 
     println(name)
     println(greeting)
