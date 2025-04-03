@@ -11,7 +11,7 @@ class Person(val firstName: String = "Peter", val lastName: String = "Parker") {
         }
 
     fun printInfo(){
-        val nickNameToPrint = if(nickName != null) nickName else "No nickname"
+        val nickNameToPrint = nickName ?: "no nickName"
         println("$firstName ($nickNameToPrint) $lastName")
     }
 }

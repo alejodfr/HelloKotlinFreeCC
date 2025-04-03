@@ -12,8 +12,5 @@ fun greetPerson(greeting: String = "hello", name: String = "kotlin") = println("
 fun main(){
     val person = Person()
     person.printInfo()
-
-
-
 }
 
