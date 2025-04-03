@@ -9,5 +9,9 @@ fun main(){
     println(interestingThings.size)
     println(interestingThings[0]) //imprime el primer elemento del array porque los arreglos comienzas desde el zero
     println(interestingThings.get(0)) //hace lo mismo que la linea superior
+
+    for (interestingThings in interestingThings){
+        println(interestingThings)
+    }
 }
 
