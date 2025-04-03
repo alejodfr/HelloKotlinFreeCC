@@ -1,13 +1,13 @@
 
-// explicacion de funciones basicas
-// llamado de funciones
-// templates
+//collecciones e iteracciones
 
 fun sayHello(greeting:String, itemToGreet:String) = println("$greeting $itemToGreet")
 
 
 fun main(){
-    sayHello("hey", "Kotlin") //templates
-    sayHello("hello", "World")
+    val interestingThings = arrayOf("Kotlin", "Programming", "Comic Books")
+    println(interestingThings.size)
+    println(interestingThings[0]) //imprime el primer elemento del array porque los arreglos comienzas desde el zero
+    println(interestingThings.get(0)) //hace lo mismo que la linea superior
 }
 
