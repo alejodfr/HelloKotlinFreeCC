@@ -7,9 +7,10 @@ fun sayHello(greeting: String, vararg itemToGreet:String) {
     }
 }
 
-fun greetPerson(greeting: String, name: String) = println("$greeting $name")
+fun greetPerson(greeting: String = "hello", name: String = "kotlin") = println("$greeting $name")
 
 fun main(){
-    greetPerson(name = "alejo", greeting = "hi")
+    greetPerson()
+    greetPerson(name = "alejo")
 }
 
