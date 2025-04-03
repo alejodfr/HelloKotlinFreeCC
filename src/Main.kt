@@ -1,11 +1,9 @@
 
 // explicacion de funciones basicas
 
-fun getGreeting(): String {
-    return "Hello Kotlin"
-}
+fun getGreeting(): String = "Hello Kotlin"
 
-fun sayHello(): Unit{
+fun sayHello() {
     println(getGreeting())
 }
 
