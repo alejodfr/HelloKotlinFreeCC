@@ -1,12 +1,25 @@
 interface PersonInfoProvider {
-    fun printInfo(person: Person)
+    val providerInfo : String
+    fun printInfo(person: Person){
+        println(providerInfo)
+        person.printInfo()
+    }
+}
+
+interface SessionInfoProvider{
+    fun getSessionId(): String
 }
 
 class BasicInfoProvider : PersonInfoProvider{
+    override val providerInfo: String
+        get() = "BasicInfoProvider"
+
     override fun printInfo(person: Person) {
-        println("printInfo")
+        super.printInfo(person)
+        println("addtional print statement")
     }
 }
+
 
 fun main(){
     val provider = BasicInfoProvider()
