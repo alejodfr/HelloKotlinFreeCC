@@ -6,8 +6,8 @@ fun sayHello(greeting:String, itemToGreet:String) = println("$greeting $itemToGr
 
 fun main(){
     val interestingThings = listOf("Kotlin", "Programming", "Comic Books")
-    interestingThings.forEach { interestingThings ->
-        println(interestingThings)
-    }
+
+    val map = mapOf(1 to "a", 2 to "b", 3 to "c")
+    map.forEach { key, value -> println("$key -> $value") }
 }
 
