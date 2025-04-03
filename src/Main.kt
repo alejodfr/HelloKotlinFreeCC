@@ -1,7 +1,7 @@
 
 //collecciones e iteracciones
 
-fun sayHello(greeting:String, itemToGreet:List<String>) {
+fun sayHello(greeting: String, vararg itemToGreet:String) {
     itemToGreet.forEach { itemToGreet ->
         println("$greeting $itemToGreet")
     }
@@ -9,7 +9,7 @@ fun sayHello(greeting:String, itemToGreet:List<String>) {
 
 
 fun main(){
-    val interestingThings = listOf("Kotlin", "Programming", "Comic Books")
-    sayHello("hi", interestingThings)
+    val interestingThings = arrayOf("Kotlin", "Programming", "Comic Books")
+    sayHello("hi", *interestingThings)
 }
 
