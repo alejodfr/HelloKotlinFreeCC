@@ -6,9 +6,7 @@ interface PersonInfoProvider {
     }
 }
 
-interface SessionInfoProvider{
-    fun getSessionId(): String
-}
+
 
 class BasicInfoProvider : PersonInfoProvider{
     override val providerInfo: String
@@ -25,3 +23,5 @@ fun main(){
     val provider = BasicInfoProvider()
     provider.printInfo(Person())
 }
+
+//mejor ponesmole pausas para este video 1h 30 minutos
