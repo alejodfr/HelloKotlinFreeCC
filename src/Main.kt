@@ -1,13 +1,15 @@
 
 //collecciones e iteracciones
 
-fun sayHello(greeting:String, itemToGreet:String) = println("$greeting $itemToGreet")
+fun sayHello(greeting:String, itemToGreet:List<String>) {
+    itemToGreet.forEach { itemToGreet ->
+        println("$greeting $itemToGreet")
+    }
+}
 
 
 fun main(){
     val interestingThings = listOf("Kotlin", "Programming", "Comic Books")
-
-    val map = mapOf(1 to "a", 2 to "b", 3 to "c")
-    map.forEach { key, value -> println("$key -> $value") }
+    sayHello("hi", interestingThings)
 }
 
