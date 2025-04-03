@@ -1,13 +1,14 @@
 
-//mas ejemplos de control de variables
+//mas ejemplos de control de variables 2
 val name = "Nate"
 var greeting: String? = null
 
 fun main(){
-    // si cambiamos el greeting = "hello" imprimira hello porque se cumpliria la condicion de abajo
-    val greetingToPrint = if(greeting != null) greeting else "hi"
+    val greetingToPrint = when (greeting) {
+        null -> "hi"
+        else -> greeting
+    }
     println(greetingToPrint)
     println(name)
     println(greeting)
-
 }
