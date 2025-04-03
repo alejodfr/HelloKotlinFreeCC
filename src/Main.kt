@@ -1,12 +1,13 @@
 
 // explicacion de funciones basicas
 // llamado de funciones
+// templates
 
-fun sayHello(itemToGreet:String) = println("Hello $itemToGreet")
+fun sayHello(greeting:String, itemToGreet:String) = println("$greeting $itemToGreet")
 
 
 fun main(){
-    sayHello(itemToGreet = "Kotlin")
-    sayHello(itemToGreet = "World")
+    sayHello("hey", "Kotlin") //templates
+    sayHello("hello", "World")
 }
 
